@@ -411,7 +411,7 @@ section {
 
 .progress-fill {
   height: 100%;
-  width: 60%;
+  width: 0%;
   background: linear-gradient(90deg, #c59898, #d23535);
   border-radius: 10px;
   transition: width 0.8s ease;
