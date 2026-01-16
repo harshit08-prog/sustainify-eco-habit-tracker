@@ -1,0 +1,836 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #374151;
+  background: #080808;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section - Full Screen */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://images.unsplash.com/photo-1605274281179-4de6641e30aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjBmb3Jlc3QlMjBzdXN0YWluYWJsZXxlbnwxfHx8fDE3Njg0MTc5Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #0f0e0e;
+  overflow: hidden;
+}
+
+/* Hero Icon */
+.hero-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.hero-icon:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-icon svg {
+  width: 40px;
+  height: 40px;
+  stroke: #FFFFFF;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  color: #FFFFFF;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.hero button {
+  background: #FFFFFF;
+  color: #2d7a5a;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  background: #f5f5f5;
+}
+
+/* Hero Logo with Glassy Effect */
+.hero-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Glass reflection effect */
+.hero-logo::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  height: 40%;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0) 100%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-logo:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+.hero-logo svg {
+  width: 45px;
+  height: 45px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  position: relative;
+  z-index: 2;
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Habits Section */
+.habits {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #000000;
+}
+
+.habits h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* Subtitle for habits section */
+.habits-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #6B7280;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.habit-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card Styles */
+.card {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: rgba(30, 30, 30, 0.7);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Icon and Title Container */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Icon Container */
+.card-icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(45, 122, 90, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #4ade80;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+.card h3 {
+  font-size: 1.35rem;
+  margin: 0;
+  font-weight: 600;
+  color: #F9FAFB;
+}
+
+.card p {
+  margin-bottom: 1.5rem;
+  color: #D1D5DB;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.card button {
+  background: #2d7a5a;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-shadow: none;
+}
+
+.card button:hover {
+  background: #246a4d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(45, 122, 90, 0.3);
+}
+
+/* Edit Icon */
+.card .edit-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.card:hover .edit-icon {
+  opacity: 1;
+}
+
+.card .edit-icon:hover {
+  background: transparent;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Add Card Button */
+.add-card-button {
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #9CA3AF;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+}
+
+.add-card-button:hover {
+  background: rgba(30, 30, 30, 0.6);
+  border-color: #2d7a5a;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  color: #2d7a5a;
+}
+
+.add-card-button i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Editable Card Styles */
+.card.editing h3 {
+  border: 1px solid #2d7a5a;
+  outline: none;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 0.5rem;
+  cursor: text;
+  transition: all 0.3s ease;
+}
+
+.card.editing h3:focus {
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(45, 122, 90, 0.1);
+}
+
+/* Progress Section */
+.progress {
+  text-align: center;
+  position: relative;
+  background: #000000;
+  overflow: hidden;
+  padding: 4rem 2rem;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+
+.progress h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #F9FAFB;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+.progress p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #D1D5DB;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 60%;
+  background: linear-gradient(90deg, #c59898, #d23535);
+  border-radius: 10px;
+  transition: width 0.8s ease;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+/* Did You Know Section - Full Width */
+.did-you-know-section {
+  background-color: #000000;
+  padding: 60px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+
+}
+
+/* Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #F9FAFB;
+  margin: 0 0 10px 0;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #9CA3AF;
+  margin: 0;
+}
+
+/* Horizontal Scroll Container */
+.scroller {
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+}
+
+.scroller-inner {
+  display: flex;
+  gap: 2rem;
+  padding-block: 1rem;
+  animation: scroll 20s linear infinite;
+  width: max-content;
+}
+
+.scroller-inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 1rem));
+  }
+}
+
+/* Fact Card - Glassy White Minimal */
+.fact-card {
+  width: 350px;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fact-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Card Title */
+.fact-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+}
+
+/* Card Description */
+.fact-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #9CA3AF;
+  margin: 0;
+}
+
+/* Mission Section - Full Width with Background */
+.mission-section {
+  background:
+    linear-gradient(135deg, rgba(45, 122, 90, 0.92) 0%, rgba(61, 139, 106, 0.92) 100%),
+    url('https://images.unsplash.com/photo-1661923031414-04772921470e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMGxlYXZlcyUyMHBhdHRlcm58ZW58MXx8fHwxNzY4NDE3OTM3fDA&ixlib=rb-4.1.0&q=80&w=1080') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 20px;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional: Add a subtle texture overlay */
+.mission-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(45, 122, 90, 0.1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Icon */
+.mission-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.mission-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Mission Title */
+.mission-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Mission Description */
+.mission-description {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  color: #ffffff;
+  opacity: 0.98;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Text */
+.mission-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  opacity: 0.9;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.mission-footer .heart-icon {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+/* Footer - Full Width */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+footer p {
+  color: #9CA3AF;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    background-attachment: scroll;
+    padding: 2rem 1rem;
+  }
+
+  .hero-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-icon svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero button {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+
+  .habits h2,
+  .progress h2,
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .habits {
+    padding: 3rem 1rem;
+  }
+
+  .habit-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .card-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .progress {
+    padding: 3rem 1rem;
+  }
+
+  .progress::after {
+    width: 40%;
+  }
+
+  .mission-section {
+    padding: 60px 20px;
+  }
+
+  .mission-section h2 {
+    font-size: 2rem;
+  }
+
+  .mission-description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .mission-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+  }
+
+  .did-you-know-section {
+    padding: 40px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .hero-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .card,
+  .fact-card {
+    padding: 1.5rem;
+  }
+
+  .progress::after {
+    display: none;
+  }
+}
+
+/* Chatbot Dark Theme Styles */
+#eco-chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: #000000;
+  border: 1px solid #333;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+  overflow: hidden;
+  z-index: 999;
+  color: #ffffff;
+}
+
+.chat-header {
+  background: #1a1a1a;
+  color: #4ade80;
+  /* Bright Green for contrast */
+  padding: 15px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  letter-spacing: 0.5px;
+}
+
+.chat-body {
+  padding: 15px;
+  height: 200px;
+  overflow-y: auto;
+  font-size: 14px;
+  background: #000000;
+  color: #e0e0e0;
+  /* Off-white for readability */
+}
+
+.chat-body p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.chat-body strong {
+  color: #fff;
+}
+
+#chatInput {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-top: 1px solid #333;
+  outline: none;
+  background: #0f0f0f;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+#chatInput::placeholder {
+  color: #888;
+}
+
+/* Scrollbar for chat body */
+.chat-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>EcoTrack – Eco Habit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <!-- Logo with Glassy Effect -->
+    <div class="hero-logo">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <!-- Stem -->
+        <path d="M16 28 L16 12" stroke-width="2" fill="none" />
+
+        <!-- Left leaf -->
+        <path d="M16 16 C16 16, 12 14, 10 10 C8 6, 10 4, 12 4 C14 4, 16 8, 16 12" stroke-width="2" fill="none" />
+
+        <!-- Right leaf -->
+        <path d="M16 16 C16 16, 20 14, 22 10 C24 6, 22 4, 20 4 C18 4, 16 8, 16 12" stroke-width="2" fill="none" />
+
+        <!-- Small center leaves -->
+        <ellipse cx="14" cy="11" rx="1.5" ry="2.5" fill="white" stroke="none" />
+        <ellipse cx="18" cy="11" rx="1.5" ry="2.5" fill="white" stroke="none" />
+
+        <!-- Base -->
+        <path d="M12 28 L20 28" stroke-width="2" fill="none" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <h1>Small Habits. Big Impact.</h1>
+
+    <p>Track your daily eco-friendly actions and make a positive difference for our planet, one habit at a time.</p>
+
+    <button>Start Tracking</button>
+  </section>
+
+  <!-- HABITS SECTION -->
+  <section class="habits">
+    <h2>Daily Eco Habits</h2>
+
+    <div class="habit-cards">
+      <div class="card">
+        <div class="edit-icon">EDIT</div>
+        <h3>🚿 Save Water</h3>
+        <p>Reduce unnecessary water usage.</p>
+        <button>Mark Done</button>
+      </div>
+
+      <div class="card">
+        <div class="edit-icon">EDIT</div>
+        <h3>🛍 Reduce Plastic</h3>
+        <p>Avoid single-use plastic items.</p>
+        <button>Mark Done</button>
+      </div>
+
+      <div class="card">
+        <div class="edit-icon">EDIT</div>
+        <h3>💡 Save Electricity</h3>
+        <p>Switch off unused appliances.</p>
+        <button>Mark Done</button>
+      </div>
+
+      <div class="add-card-button">
+        <i>+</i>
+        Add New Habit
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESS SECTION -->
+  <section class="progress">
+    <h2>Your Progress</h2>
+    <p>Eco Score: 60%</p>
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+  </section>
+
+  <!-- DID YOU KNOW SECTION -->
+  <section class="did-you-know-section">
+    <div class="section-header">
+      <h2>Did You Know?</h2>
+      <p>Learn how small actions create big changes</p>
+    </div>
+
+    <div class="scroller">
+      <div class="scroller-inner">
+        <!-- Original Cards -->
+        <div class="fact-card">
+          <h3>Water Conservation</h3>
+          <p>Reducing your shower time by just 2 minutes can save up to 10 gallons of water per day. That's 3,650
+            gallons per year!</p>
+        </div>
+
+        <div class="fact-card">
+          <h3>Plastic Reduction</h3>
+          <p>A single reusable bag can eliminate the need for over 1,000 plastic bags in its lifetime, preventing tons
+            of plastic waste.</p>
+        </div>
+
+        <div class="fact-card">
+          <h3>Energy Efficiency</h3>
+          <p>Unplugging electronics when not in use can reduce your energy bill by up to 10% and prevent unnecessary
+            carbon emissions.</p>
+        </div>
+
+        <!-- Duplicated Cards for Infinite Scroll -->
+        <div class="fact-card">
+          <h3>Water Conservation</h3>
+          <p>Reducing your shower time by just 2 minutes can save up to 10 gallons of water per day. That's 3,650
+            gallons per year!</p>
+        </div>
+
+        <div class="fact-card">
+          <h3>Plastic Reduction</h3>
+          <p>A single reusable bag can eliminate the need for over 1,000 plastic bags in its lifetime, preventing tons
+            of plastic waste.</p>
+        </div>
+
+        <div class="fact-card">
+          <h3>Energy Efficiency</h3>
+          <p>Unplugging electronics when not in use can reduce your energy bill by up to 10% and prevent unnecessary
+            carbon emissions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION SECTION -->
+  <section class="mission-section">
+    <div class="mission-icon">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
+        <path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+        <path d="M8 12c0 1.5.5 3 1.5 4" />
+        <path d="M16 12c0 1.5-.5 3-1.5 4" />
+      </svg>
+    </div>
+
+    <h2>Our Mission</h2>
+
+    <p class="mission-description">
+      We believe that every small action counts. By tracking and celebrating your daily eco-friendly
+      habits, together we can create a sustainable future for our planet and generations to come.
+    </p>
+
+    <div class="mission-footer">
+      <span>Built with</span>
+      <span class="heart-icon">💚</span>
+      <span>by Cortex Duo</span>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
